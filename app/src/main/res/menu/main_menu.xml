@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_emergency_numbers"
+        android:title="Emergency Numbers"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_how_to_use"
+        android:title="How to Use App"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_advanced_features"
+        android:title="Extra Features"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:title="About"
+        app:showAsAction="never" />
+</menu>

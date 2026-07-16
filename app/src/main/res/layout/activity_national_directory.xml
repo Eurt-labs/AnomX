@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#141218"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarNationalDir"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#211F26"
+        app:title="Emergency Directory"
+        app:titleTextColor="#E6E0E9" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Intro text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comprehensive list of emergency contact numbers across India. Tap any service to dial instantly."
+                android:textColor="#CAC4D0"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Category 1: Pan-India -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pan-India National Emergency"
+                android:textColor="#D0BCFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#4A4458" android:layout_marginBottom="12dp"/>
+            
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_112"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="National Emergency Response - 112"
+                android:textColor="#FFB4AB"
+                app:strokeColor="#FFB4AB"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Category 2: Primary -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Primary Emergency Services"
+                android:textColor="#D0BCFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#4A4458" android:layout_marginBottom="12dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_100"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Police Control Room - 100"
+                android:textColor="#E6E0E9"
+                app:strokeColor="#4A4458"
+                android:layout_marginBottom="4dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_101"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fire Brigade - 101"
+                android:textColor="#E6E0E9"
+                app:strokeColor="#4A4458"
+                android:layout_marginBottom="4dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_102"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ambulance - 102"
+                android:textColor="#E6E0E9"
+                app:strokeColor="#4A4458"
+                android:layout_marginBottom="4dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_108"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disaster Management / Ambulance - 108"
+                android:textColor="#E6E0E9"
+                app:strokeColor="#4A4458"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Category 3: Women & Child -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Women &amp; Child Protection"
+                android:textColor="#D0BCFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#4A4458" android:layout_marginBottom="12dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_181"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Women Helpline (Domestic) - 181"
+                android:textColor="#E6E0E9"
+                app:strokeColor="#4A4458"
+                android:layout_marginBottom="4dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_1091"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Women Helpline (All India) - 1091"
+                android:textColor="#E6E0E9"
+                app:strokeColor="#4A4458"
+                android:layout_marginBottom="4dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_1098"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Child Helpline - 1098"
+                android:textColor="#E6E0E9"
+                app:strokeColor="#4A4458"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Category 4: Specialised Base -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Specialised Helplines"
+                android:textColor="#D0BCFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#4A4458" android:layout_marginBottom="12dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_1930"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cyber Crime - 1930"
+                android:textColor="#E6E0E9"
+                app:strokeColor="#4A4458"
+                android:layout_marginBottom="4dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_1906"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LPG Gas Leakage - 1906"
+                android:textColor="#E6E0E9"
+                app:strokeColor="#4A4458"
+                android:layout_marginBottom="4dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_1066"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anti-Poison (Delhi) - 1066"
+                android:textColor="#E6E0E9"
+                app:strokeColor="#4A4458"
+                android:layout_marginBottom="4dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_139"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Railway Emergency - 139"
+                android:textColor="#E6E0E9"
+                app:strokeColor="#4A4458"
+                android:layout_marginBottom="4dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_14567"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Senior Citizen Helpline - 14567"
+                android:textColor="#E6E0E9"
+                app:strokeColor="#4A4458"
+                android:layout_marginBottom="4dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_1097"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AIDS Helpline - 1097"
+                android:textColor="#E6E0E9"
+                app:strokeColor="#4A4458"
+                android:layout_marginBottom="4dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_1551"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kisan Call Centre - 1551"
+                android:textColor="#E6E0E9"
+                app:strokeColor="#4A4458"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Category 5: Disaster & Relief -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disaster &amp; Relief"
+                android:textColor="#D0BCFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#4A4458" android:layout_marginBottom="12dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_1078"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NDMA - 1078"
+                android:textColor="#E6E0E9"
+                app:strokeColor="#4A4458"
+                android:layout_marginBottom="4dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_1070"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relief Commissioner - 1070"
+                android:textColor="#E6E0E9"
+                app:strokeColor="#4A4458"
+                android:layout_marginBottom="4dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dial_ndrf"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NDRF Headquarters - 011-24363260"
+                android:textColor="#E6E0E9"
+                app:strokeColor="#4A4458"
+                android:layout_marginBottom="32dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

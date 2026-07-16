@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/material_surface"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚨 AnomX"
+        android:textColor="#E6E0E9"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A personal safety and emergency response application.\n\nDeveloped by Eurt-labs\nVersion 1.0.0"
+        android:textColor="#CAC4D0"
+        android:textSize="16sp"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/aboutGitLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://github.com/Eurt-labs"
+        android:textColor="#D0BCFF"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report Bugs / Development Support:"
+        android:textColor="#E6E0E9"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/aboutBugReportLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://wa.me/919761804932"
+        android:textColor="#D0BCFF"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+</LinearLayout>

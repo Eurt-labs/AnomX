@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1B1B1B"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Advanced Security Modules"
+        android:textColor="#FFB4AB"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Siren Overdrive -->
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_siren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Siren Overdrive Interface"
+                android:textColor="#E6E0E9"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Injects a Siren bypass button to the main dashboard."
+                android:textColor="#938F99"
+                android:textSize="12sp" />
+
+            <!-- Battery Ping -->
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_battery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Battery Failure Ping"
+                android:textColor="#E6E0E9"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Autonomously fires SOS when phone reaches critical battery."
+                android:textColor="#938F99"
+                android:textSize="12sp" />
+
+            <!-- Breadcrumbs -->
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_breadcrumbs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Continuous GPS Looping"
+                android:textColor="#E6E0E9"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Fires an updated location matrix every 3 minutes."
+                android:textColor="#938F99"
+                android:textSize="12sp" />
+
+            <!-- Volume Hardware Bypass -->
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_volkeys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Hardware SOS Bypass"
+                android:textColor="#E6E0E9"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Triple tap Volume DOWN to trigger an instant background SOS."
+                android:textColor="#938F99"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

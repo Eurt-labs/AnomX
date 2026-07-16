@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/material_surface"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How to Use"
+        android:textColor="#E6E0E9"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Setup Emergency Network \nUse the '+' button on the dashboard to securely add contact numbers into your emergency ring. These numbers will be pinged instantly upon trigger.\n\n2. Shake to Alert (Kinetic Trigger)\nFlip the 'ON' toggle to arm the background kinetic sensor. The app silently monitors device acceleration. If you vigorously double-shake your device during an emergency, it will intercept the motion and automatically execute the SOS broadcast without needing to turn on the screen.\n\n3. Manual SOS Overdrive\nIf unable to shake the device, tap the prominent 'SEND SOS NOW' button in a critical situation. The app bypasses sensors and instantly blasts your exact GPS Live Location.\n\n4. Dynamic Broadcaster (WhatsApp vs SMS)\nAnomX can broadcast via SMS natively or push through WhatsApp. Use the sleek toggle switch to seamlessly route your SOS broadcasts through WhatsApp's secure network instead of standard SMS.\n\n5. Real-Time Tracking &amp; Directories\nAs long as Location Services are enabled, the 'Live Location' layout guarantees precision coordinate lock-in before you execute the distress signal. We also baked in a full National Directory at the bottom for instant one-tap dialing of Police, Ambulances, and Crisis lines."
+        android:textColor="#CAC4D0"
+        android:textSize="14sp"
+        android:lineSpacingExtra="6dp" />
+
+</LinearLayout>

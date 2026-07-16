@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnomX Mockup</title>
+    <style>
+        body { background-color: #141218; color: #E6E0E9; font-family: sans-serif; display: flex; justify-content: center; height: 100vh; margin: 0; align-items: center; }
+        .phone { width: 390px; height: 844px; background: #141218; border: 2px solid #555; position: relative; overflow: auto; padding: 20px; box-sizing: border-box; }
+        .app-bar { font-size: 24px; font-weight: bold; margin-bottom: 20px; color: #E6E0E9; }
+        .card { background: #211F26; border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+        .btn-sos { background: #FFB4AB; color: #381E72; font-size: 20px; font-weight: 900; font-family: 'sans-serif-black', sans-serif; width: 100%; height: 70px; border: none; border-radius: 12px; cursor: pointer; transition: 0.1s; display: flex; align-items: center; justify-content: center; }
+        .btn-sos:active, .btn-sos.active { transform: scale(0.95); opacity: 0.8; }
+        .banner { position: absolute; top: 20px; left: 50%; transform: translateX(-50%); background: #B3261E; color: white; padding: 10px 20px; border-radius: 8px; font-weight: bold; opacity: 0; transition: 0.3s; }
+        .banner.show { opacity: 1; }
+        .toggles { display: flex; gap: 10px; margin-top: 10px; }
+        .tog { flex: 1; height: 40px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
+        .tog.on { background: #D0BCFF; color: #381E72; }
+        .tog.off { background: #4A4458; color: #E8DEF8; }
+    </style>
+</head>
+<body>
+    <div class="phone" id="phone">
+        <div class="banner" id="banner">🚨 EMERGENCY SOS SENT!</div>
+        <div class="app-bar">AnomX<br><span style="font-size:14px;color:#CAC4D0;font-weight:normal;">Emergency Response System</span></div>
+        <div class="card">
+            <h3 style="margin-top:0">Manual Trigger</h3>
+            <button class="btn-sos" id="sosBtn">EMERGENCY SOS</button>
+        </div>
+        <div class="card">
+            <h3 style="margin-top:0">Shake to Alert</h3>
+            <div id="shkStat" style="color:#CAC4D0;margin-bottom:10px;">Status: 🔴 Inactive</div>
+            <div class="toggles">
+                <button class="tog off" id="btnOn">ON</button>
+                <button class="tog on" id="btnOff">OFF</button>
+            </div>
+        </div>
+        <div class="card" style="height:200px; display:flex; align-items:center; justify-content:center; background:#111;">
+            <div style="color:#777;">[ Live Location Map Area ]</div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('btnOn').onclick = function() {
+            this.className = 'tog on'; document.getElementById('btnOff').className = 'tog off';
+            document.getElementById('shkStat').innerHTML = 'Status: 🟢 Active'; document.getElementById('shkStat').style.color = '#4CAF50';
+        };
+        document.getElementById('btnOff').onclick = function() {
+            this.className = 'tog on'; document.getElementById('btnOn').className = 'tog off';
+            document.getElementById('shkStat').innerHTML = 'Status: 🔴 Inactive'; document.getElementById('shkStat').style.color = '#CAC4D0';
+        };
+        let b = document.getElementById('sosBtn');
+        let m = document.getElementById('banner');
+        b.onmousedown = () => b.classList.add('active');
+        b.onmouseup = () => {
+            b.classList.remove('active');
+            m.classList.add('show');
+            setTimeout(() => m.classList.remove('show'), 2000);
+        };
+        // Auto demo for recording
+        window.startDemo = function() {
+            setTimeout(() => document.getElementById('phone').scrollBy({top: 100, behavior: 'smooth'}), 500);
+            setTimeout(() => document.getElementById('btnOn').click(), 1500);
+            setTimeout(() => document.getElementById('phone').scrollBy({top: -100, behavior: 'smooth'}), 2500);
+            setTimeout(() => { b.onmousedown(); setTimeout(() => b.onmouseup(), 200); }, 3500);
+        };
+    </script>
+</body>
+</html>
